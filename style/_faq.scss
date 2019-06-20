@@ -1,0 +1,22 @@
+#faq {
+    li {
+        list-style: none;
+        counter-increment: step-counter;
+        text-shadow: 0 0 0.1em black;
+        font-size: 1.05em;
+        line-height: 1.5em;
+
+        &::before {
+            content: counter(step-counter);
+            margin-right: 5px;
+            height: 100%;
+            background-color: orangered;
+            border-radius: 0.2em;
+            padding: 0.25em 0.5em;
+            color: black;
+        }
+    }
+    p {
+        margin-left: 2em;
+    }
+}
